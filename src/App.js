@@ -7,9 +7,9 @@ import "./generic.css";
 function App() {
 
   return (
-    <div className="App">
-        <Header />
-        <Landing />
+    <div className="card">
+      <Header />
+      <Landing />
     </div>
   );
 }

@@ -2,32 +2,32 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faTwitterSquare, faFacebookSquare, faInstagramSquare, faLinkedin, faGithubSquare } from '@fortawesome/free-brands-svg-icons'
 
-const Footer = () => {
+const Footer = ({ twitter, facebook, instagram, linkedIn, github }) => {
     return (
         <footer className="footer">
             <ul>
                 <li>
-                    <a href="#">
+                    <a href={twitter} target="_blank" rel="noreferrer">
                         <FontAwesomeIcon icon={faTwitterSquare}></FontAwesomeIcon>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href={facebook} target="_blank" rel="noreferrer">
                         <FontAwesomeIcon icon={faFacebookSquare}></FontAwesomeIcon>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href={instagram} target="_blank" rel="noreferrer">
                         <FontAwesomeIcon icon={faInstagramSquare}></FontAwesomeIcon>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href={linkedIn} target="_blank" rel="noreferrer">
                         <FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon>
                     </a>
                 </li>
                 <li>
-                    <a href="#">
+                    <a href={github} target="_blank" rel="noreferrer">
                         <FontAwesomeIcon icon={faGithubSquare}></FontAwesomeIcon>
                     </a>
                 </li>

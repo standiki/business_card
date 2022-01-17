@@ -7,9 +7,16 @@ import data from "../data";
 const Landing = () => {
     return (
         <div className="landing_page">
-            <About aboutText={data.about}></About>
-            <Interests interestsText={data.interests}></Interests>
-            <Footer/>
+            <About aboutText={data.about} />
+            <Interests interestsText={data.interests} />
+            
+            <Footer 
+                twitter={data.social.twitter}
+                facebook={data.social.facebook}
+                instagram={data.social.instagram}
+                linkedIn={data.social.linkedIn}
+                github={data.social.github} 
+            />
         </div>
     )
 }

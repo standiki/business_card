@@ -11,7 +11,6 @@ const Header = () => {
             <div className="header_info">
                 <h3 className="header_name">{data.name}</h3>
                 <p className="header_title">{data.title}</p>
-                <a href={data.portfolio} className="header_portfolio">Take a tour</a>
             </div>
             <div className="header_social">
                 <button className="email">
