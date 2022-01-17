@@ -1,9 +1,9 @@
-import data from "../data";
-
-const About = () => {
+const About = ({ aboutText }) => {
     return (
-        <div className="profile_details">
-            <h3>{data.name}</h3>
+        <div className="interests">
+            <p className="interests_text">
+                {aboutText}
+            </p>
         </div>
     )
 }

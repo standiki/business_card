@@ -1,9 +1,7 @@
-import data from "../data";
-
-const Interests = () => {
+const Interests = ({ interestsText }) => {
     return (
         <div className="profile_details">
-            <h3>{data.name}</h3>
+            <p className="interests_text">{interestsText}</p>
         </div>
     )
 }
