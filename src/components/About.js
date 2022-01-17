@@ -1,10 +1,10 @@
 const About = ({ aboutText }) => {
     return (
-        <div className="interests">
-            <p className="interests_text">
+        <section className="about">
+            <p className="text">
                 {aboutText}
             </p>
-        </div>
+        </section>
     )
 }
 

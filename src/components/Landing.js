@@ -6,7 +6,7 @@ import data from "../data";
 
 const Landing = () => {
     return (
-        <div>
+        <div className="landing_page">
             <About aboutText={data.about}></About>
             <Interests interestsText={data.interests}></Interests>
             <Footer/>

@@ -6,25 +6,21 @@ import data from "../data";
 
 const Header = () => {
     return (
-        <div className="contact_card">
-            <img src={process.env.PUBLIC_URL + data.profileImage} alt={data.title} className="card_img"/>
-            <div className="card_info">
-                <h3 className="card_name">{data.name}</h3>
-                <p className="card_title">{data.title}</p>
-                <p className="card--portfolio_link">{data.portfolio}</p>
+        <div className="card_header">
+            <img src={process.env.PUBLIC_URL + data.profileImage} alt={data.title} className="header_img"/>
+            <div className="header_info">
+                <h3 className="header_name">{data.name}</h3>
+                <p className="header_title">{data.title}</p>
+                <a href={data.portfolio} className="header_portfolio">Take a tour</a>
             </div>
-            <div className="social_info">
+            <div className="header_social">
                 <button className="email">
-                    <span>
-                        <FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon>
-                    </span>
+                    <FontAwesomeIcon icon={faEnvelope}></FontAwesomeIcon>
                     email
                 </button>
                 <button className="linkInd">
-                <span>
                     <FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon>
-                </span>
-                linkedIn
+                    linkedIn
                 </button>
             </div>
         </div>
