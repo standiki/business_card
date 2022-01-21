@@ -9,27 +9,27 @@ const Footer = ({ twitter, facebook, instagram, linkedIn, github }) => {
             <ul>
                 <li>
                     <a href={twitter} target="_blank" rel="noreferrer">
-                        <FontAwesomeIcon icon={faTwitterSquare}></FontAwesomeIcon>
+                        <FontAwesomeIcon icon={faTwitterSquare} className="faIcon" ></FontAwesomeIcon>
                     </a>
                 </li>
                 <li>
                     <a href={facebook} target="_blank" rel="noreferrer">
-                        <FontAwesomeIcon icon={faFacebookSquare}></FontAwesomeIcon>
+                        <FontAwesomeIcon icon={faFacebookSquare} className="faIcon" ></FontAwesomeIcon>
                     </a>
                 </li>
                 <li>
                     <a href={instagram} target="_blank" rel="noreferrer">
-                        <FontAwesomeIcon icon={faInstagramSquare}></FontAwesomeIcon>
+                        <FontAwesomeIcon icon={faInstagramSquare} className="faIcon" ></FontAwesomeIcon>
                     </a>
                 </li>
                 <li>
                     <a href={linkedIn} target="_blank" rel="noreferrer">
-                        <FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon>
+                        <FontAwesomeIcon icon={faLinkedin} className="faIcon" ></FontAwesomeIcon>
                     </a>
                 </li>
                 <li>
                     <a href={github} target="_blank" rel="noreferrer">
-                        <FontAwesomeIcon icon={faGithubSquare}></FontAwesomeIcon>
+                        <FontAwesomeIcon icon={faGithubSquare} className="faIcon" ></FontAwesomeIcon>
                     </a>
                 </li>
             </ul>
