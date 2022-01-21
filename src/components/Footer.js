@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitterSquare, faFacebookSquare, faInstagramSquare, faLinkedin, faGithubSquare } from '@fortawesome/free-brands-svg-icons'
 
 const Footer = ({ twitter, facebook, instagram, linkedIn, github }) => {
+
     return (
         <footer className="footer">
             <ul>

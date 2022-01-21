@@ -4,16 +4,16 @@ import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
 import data from "../data";
 
-const Header = () => {
+const Info = () => {
     return (
-        <div className="card_header">
-            <img src={process.env.PUBLIC_URL + data.profileImage} alt={data.title} className="header_img padding" />
-            <div className="header_info">
-                <h3 className="header_name">{data.name}</h3>
-                <p className="header_title">{data.title}</p>
-                <a href={data.portfolio} target="_blank" rel="noreferrer" className="portfolio_link" >Take a tour</a>
+        <div className="info_container">
+            <img src={process.env.PUBLIC_URL + data.profileImage} alt={data.title} className="info_img" />
+            <div className="info">
+                <h3 className="info_name">{data.name}</h3>
+                <p className="info_title">{data.title}</p>
+                <a href={data.portfolio} target="_blank" rel="noreferrer" className="info_link" >Take a tour</a>
             </div>
-            <div className="header_social">
+            <div className="info_social">
                 <button className="email">
                     <FontAwesomeIcon icon={faEnvelope} className="fa_icon"></FontAwesomeIcon>
                     email
@@ -27,4 +27,4 @@ const Header = () => {
     )
 }
 
-export default Header;
+export default Info;

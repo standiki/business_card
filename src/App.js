@@ -1,16 +1,17 @@
-import Header from "./components/Header"
-import Landing from "./components/Landing";
+import Info from "./components/Info"
+import Main from "./components/Main";
+// import About from "./components/About"
+// import Interest from "./components/Interests"
 // import Footer from "./components/Footer";
-import "./generic.css";
 
-import data from "./data";
+import "./generic.css";
 
 function App() {
 
   return (
     <div className="card">
-      <Header />
-      <Landing />
+      <Info />
+      <Main />
     </div>
   );
 }

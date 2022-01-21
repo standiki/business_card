@@ -5,12 +5,12 @@
 }
 
 body {
+  font-family: "Open Sans", sans-serif;
+  font-size: 10px;
   background: #000;
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Open Sans", sans-serif;
-  font-size: 10px;
 }
 
 a {
@@ -18,18 +18,24 @@ a {
 }
 
 .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #23252c;
   width: 100%;
   height: auto;
-  background: #23252c;
+  padding: 0 36px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .card {
-  max-width: 500px;
+  max-width: 400px;
 }
 
-/* Header */
+/* Info */
 
-.card_header {
+.info_container {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -37,22 +43,22 @@ a {
   align-items: center;
 }
 
-.card_header {
+.info_container {
   max-width: 450px;
 }
 
-.header_img {
+.info_img {
   margin-top: 45px;
-  width: 300px;
-  height: 300px;
+  width: 250px;
+  height: 250px;
   border-radius: 10px 10px 0px 0px;
 }
 
-.header_info {
+.info {
   color: #ffffff;
 }
 
-.header_name {
+.info_name {
   margin-top: 20px;
   margin-bottom: 8px;
   font-size: 1.6rem;
@@ -60,25 +66,22 @@ a {
   text-align: center;
 }
 
-.header_title {
+.info_title {
   font-size: 0.8rem;
   line-height: 15px;
   text-align: center;
   color: #f3bf99;
 }
 
-.portfolio_link {
+.info_link {
   margin-left: 30%;
-}
-
-.portfolio_link {
   font-size: 10.24px;
   line-height: 150%;
   text-align: center;
   color: #f5f5f5;
 }
 
-.header_social {
+.info_social {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -88,7 +91,7 @@ a {
   margin-bottom: 33px;
 }
 
-.header_social button {
+.info_social button {
   width: 110px;
   font-size: 0.9rem;
   font-weight: 500;
@@ -128,36 +131,30 @@ a {
   margin-right: 8px;
 }
 
-/* Landing */
+/* Main */
 
-.landing_page {
+.main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  color: #f5f5f5;
   gap: 27px;
-}
-
-.landing_page {
-  max-width: 450px;
+  max-width: 240px;
 }
 
 /* About And Interests */
 
 .about,
 .interests {
+  height: auto;
   color: #dcdcdc;
-  margin-left: 100px;
 }
 
-.about_title,
-.interests_title {
+.title {
   font-size: 1.2rem;
   line-height: 150%;
 }
 
-.about > .text,
-.interests > .text {
+.text {
   font-size: 0.7rem;
   line-height: 150%;
 }

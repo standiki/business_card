@@ -1,15 +1,16 @@
-import About from "./About";
-import Interests from "./Interests";
-import Footer from "./Footer";
+import About from "./About"
+import Interests from "./Interests"
+import Footer from "./Footer"
 
-import data from "../data";
+import data from "../data"
 
-const Landing = () => {
+const Main = () => {
+
     return (
-        <div className="landing_page">
+        <main className="main">
             <About aboutText={data.about} />
             <Interests interestsText={data.interests} />
-            
+
             <Footer 
                 twitter={data.social.twitter}
                 facebook={data.social.facebook}
@@ -17,8 +18,8 @@ const Landing = () => {
                 linkedIn={data.social.linkedIn}
                 github={data.social.github} 
             />
-        </div>
+        </main>
     )
 }
 
-export default Landing;
+export default Main;
