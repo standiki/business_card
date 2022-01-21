@@ -169,6 +169,7 @@ a {
   padding-bottom: 20px;
 }
 
-.footer ul li {
+.footer ul li a {
+  color: #918e9b;
   font-size: 1.5rem;
 }
