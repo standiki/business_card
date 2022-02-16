@@ -7,7 +7,8 @@ import data from "../data";
 const Info = () => {
     return (
         <div className="info_container">
-            <img src={process.env.PUBLIC_URL + data.profileImage} alt={data.name} className="info_img" />
+            <img 
+                src={process.env.PUBLIC_URL + data.profileImage} alt={data.name} className="info_img" />
             <div className="info">
                 <h3 className="info_name">{data.name}</h3>
                 <p className="info_title">{data.title}</p>
